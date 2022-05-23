@@ -2,10 +2,10 @@
         org.clojure/clojurescript {:mvn/version "1.10.739"}
         cljsjs/react-dom {:mvn/version "17.0.2-0"
                           :exclusions [cljsjs/react-dom-server]}
-        uix.core/uix.core {:git/url "https://github.com/roman01la/uix.git"
+        uix.core/uix.core {:git/url "https://github.com/teknql/uix.git"
                            :deps/root "core"
-                           :sha "0da33eef38a7122be226b9b9a8ae0b5431b6b5d3"}}
- :paths ["src"]
+                           :sha "a0fd6e49dfd96af10279130e705441eb3cb6482f"}}
+:paths ["src"]
  :aliases {:dev {:extra-deps {uix.core/uix.core {:local/root "../core"}}}
            :release {:extra-deps {appliedscience/deps-library {:mvn/version "0.3.4"}}
                      :main-opts ["-m" "deps-library.release"]}}}
